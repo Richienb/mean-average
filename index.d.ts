@@ -1,15 +1,14 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Get the mean of an array of numbers.
+@param array The array to get the mean of.
 @example
 ```
-const theModule = require("the-module");
+const meanAverage = require("mean-average");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+meanAverage([1, 2, 4]);
+//=> 3.5
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function meanAverage(array: number[]): number
 
-export = theModule
+export = meanAverage

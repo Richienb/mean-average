@@ -1,9 +1,15 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+const totalled = require("totalled")
+
+module.exports = array => {
+	if (!Array.isArray(array)) {
+		throw new TypeError("An array of numbers must be provided!")
 	}
 
-	return `${input} & ${postfix}`
+	if (array.length === 0) {
+		return NaN
+	}
+
+	return totalled(array) / array.length
 }

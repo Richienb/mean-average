@@ -1,13 +1,6 @@
 const test = require("ava")
-const theModule = require(".")
+const meanAverage = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(meanAverage([1, 2, 6]), 3)
 })

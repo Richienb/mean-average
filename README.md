@@ -1,41 +1,30 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# mean-average [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/mean-average/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/mean-average)
 
-My awesome module.
+Get the mean of an array of numbers.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/mean-average.png)](https://npmjs.com/package/mean-average)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install mean-average
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const meanAverage = require("mean-average");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+meanAverage([1, 2, 6]);
+//=> 3
 ```
 
 ## API
 
-### theModule(input, options?)
+### meanAverage(array)
 
-#### input
+#### array
 
-Type: `string`
+Type: `array<number>`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The array to get the mean of.
